@@ -10,7 +10,7 @@ jobs:
     strategy:
       matrix:
         platform: ["linux/amd64", "linux/arm64"]
-        version: ["8.4"]
+        version: ["8.2", "8.3", "8.4"]
       fail-fast: false
     steps:
       -
