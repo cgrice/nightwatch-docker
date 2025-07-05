@@ -32,7 +32,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./docker/${{ matrix.version }}
+          file: ./docker/${{ matrix.version }}/Dockerfile
           platforms: ${{ matrix.platform }}
           push: false
           tags: cgrice/nightwatch:${{ matrix.version }}
