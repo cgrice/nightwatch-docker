@@ -34,5 +34,5 @@ jobs:
           context: .
           file: ./docker/${{ matrix.version }}/Dockerfile
           platforms: ${{ matrix.platform }}
-          push: false
+          push: true
           tags: cgrice/nightwatch:${{ matrix.version }}
